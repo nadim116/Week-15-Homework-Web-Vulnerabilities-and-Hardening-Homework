@@ -140,17 +140,17 @@ Solution: Right-clicking on web page and selecting "Inspecting the Element". Cha
 
 **Step 5, A couple BeEF exploits**
 
-Social Engineering >> Pretty Theft
+Pretty Theft
 
 ![Pretty Theft - Facebook](images/pretty-theft.png)
 
 ![Pretty Theft - LinkedIn](images/pretty-theft-2.png)
 
-Social Engineering >> Fake Notification Bar
+Fake Notification Bar
 
 ![Fake Notification Bar](images/fake-notification-bar.png)
 
-Host >> Get Geolocation (Third Party)
+Get Geolocation (Third Party)
 
 ![Get Geolocation (Third Party)](images/get-geolocation.png)
 
