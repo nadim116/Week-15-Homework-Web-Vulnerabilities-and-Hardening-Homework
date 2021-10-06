@@ -23,20 +23,16 @@ Select the `Command Injection` option from the left menus.
 
 Using the dot-dot-slash `../` method five times to design two payloads that will display the contents of the following files:
 
-- `/etc/passwd`
-
-	`8.8.8.8 && cat ../../../../../etc/passwd`
+- `8.8.8.8 && cat ../../../../../etc/passwd`
 ![cat ../../../../../etc/passwd](images/passwd.png "cat ../../../../../etc/passwd")
 
-- `/etc/hosts`
-
-	`8.8.8.8 && cat ../../../../../etc/hosts`
+- `8.8.8.8 && cat ../../../../../etc/hosts`
 ![cat ../../../../../etc/hosts](images/hosts.png "cat ../../../../../etc/hosts")
 
 **Recommended mitigation strategies:**
 
 - Server-side validation so unintended files aren't shown to the general public
-- Segregation of confidential files from the web server and accessible directories.
+- Confidential files should not be accesible onb the diorectories in this server. We need to segregate those files so they arent easible accesible tro unauthorized people.
 - Permissions to restrict web server account accessibility.
 
 #### Web Application 2: *A Brute Force to Be Reckoned With*
@@ -94,7 +90,9 @@ After analysis of intruder attack results, the login username/password combinati
 
 Recommended mitigation strategies:
 
-- Mitigations can include requiring complex usernames and passwords, using multi-factored authentication, and enabling a lockout after a certain amount of failed login attempts.
+- Mitigations can include requiring complex usernames and passwords
+- Enabling MFA (multi-factored authentication)
+- Enabling a lockout after a certain amount of failed login attempts.
 
 #### Web Application 3: *Where's the BeEF?*
 
@@ -158,4 +156,5 @@ Host >> Get Geolocation (Third Party)
 
 #### Recommended mitigation strategies
 
-- Input validation is a common method used to mitigate cross-site scripting.
+- A common method of mitigating cross-site scrippting is by implementing "Input Validation"
+- With input validation, a regular user wont be able to exploit the site since the server will evaluate the request and respond with only allowed information instead of displaying confidential info. 
