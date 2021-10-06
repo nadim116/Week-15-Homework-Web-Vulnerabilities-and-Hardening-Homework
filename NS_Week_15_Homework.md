@@ -140,7 +140,7 @@ Solution: Right-clicking on web page and selecting "Inspecting the Element". Cha
 
 **Step 5, A couple BeEF exploits**
 
-Pretty Theft
+Theft
 
 ![Pretty Theft - Facebook](images/pretty-theft.png)
 
